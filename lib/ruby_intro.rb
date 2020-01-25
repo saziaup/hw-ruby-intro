@@ -47,7 +47,6 @@ def binary_multiple_of_4?(s)
 
 
 # Part 3
-
 class BookInStock
     
     attr_accessor :isbn
@@ -55,7 +54,7 @@ class BookInStock
 
     def initialize (isbn, price)
    
-    @isbn = isbn
+    @isbn = isbn 
     @price = price
     end
 
