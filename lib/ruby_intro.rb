@@ -32,22 +32,9 @@ def starts_with_consonant? s
   /^[b-df-hj-np-tv-z]/i.match(s) != nil
 end
 
-def binary_multiple_of_4? s
-    y = 0
-    array = s.chars
-    array.map(&:to_i)
-    array.each do |x| 
-        if x == 1
-            y =+ 2^x
-        else 
-            y =+ 0
-        end 
-
-    if y % 4 == 0 
-        puts "True"
-    else 
-        puts "False"
-        end 
+def binary_multiple_of_4? (s)
+	return true if s == "0"
+	/^[10]*00$/.match(s) != nil
 end
 
 # Part 3
